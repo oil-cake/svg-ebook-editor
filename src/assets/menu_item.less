@@ -1,0 +1,41 @@
+.relative{
+  position: absolute;
+  top: 0;bottom: 0;right: 0;left: 0;
+}
+.col {
+  position: absolute;
+  top: 0;bottom: 0;right: 0;left: 0;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  &:hover {
+    border: rgba(49,69,171,0.58) 2px solid;
+    //box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.57);
+  }
+  >:first-child{
+    font-size: 36px;
+  }
+}
+
+.active {
+  background-color: lightsteelblue;
+}
+.rt{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  right: 0;
+  &:hover {
+    background-color: lavender;
+  }
+}
